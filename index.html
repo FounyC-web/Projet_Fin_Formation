@@ -3,155 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Founy Design Accueil</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <title>Founy Design - Décoration Intérieure et Événementielle</title>
+    <meta name="description" content="Founy Design - Sublimez vos espaces, révélez votre style. Décoration intérieure et événementielle élégante et raffinée.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- section navbar -->
-    <header>
-    <nav>
-      <a href="index.html" class="logo">
-      <img src="images/logo.jpeg" alt="Founy Design Logo">
-      </a>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
-    <!-- fin section navbar -->
+    <!-- En-tête et Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="images/logo.jpeg" alt="logo Founy Design" loading="lazy">
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#mission" class="nav-link">Notre mission</a></li>
+                <li><a href="#services" class="nav-link">Nos services</a></li>
+                <li><a href="#realisations" class="nav-link">Nos réalisations</a></li>
+                <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+                <li><a href="#contact" class="nav-link">Contacts</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-    <!-- section hero -->
-    <section class="hero">
-      <div class="hero-text">
-          <h1>Bienvenue chez Founy Design</h1>
-          <p>Votre partenaire pour un intérieur élégant et harmonieux.</p>
-          <a href="services.html" class="btn">Découvrez nos services</a>
-      </div>
+    <!-- Section Hero -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Founy Design</h1>
+            <p class="hero-subtitle">Sublimez vos espaces, révélez votre style.</p>
+            <a href="#services" class="btn btn-primary">Découvrir nos services</a>
+        </div>
     </section>
-    <!-- fin section hero -->
 
-      <!-- section à propos -->
-    <section class="apropos">
-      <h2>Qui sommes-nous ?</h2>
-          <p>Founy Design est une entreprise spécialisée dans la conception d'intérieurs élégants et fonctionnels. Nous croyons que chaque espace mérite d'être beau et harmonieux, et nous nous engageons à transformer vos idées en réalité.</p>
-          <p>Notre équipe de designers expérimentés travaille en étroite collaboration avec vous pour comprendre vos besoins et vos préférences, afin de créer des espaces qui reflètent votre style de vie unique.</p>
-            <img src="images/a-propos.jpg" style="height: 80vh;" alt="Décoration d'intérieur par Founy Design">
-      </section>
-    <!-- fin section a propos -->
-
-    <!-- section services -->
-    <section class="services">
-          <h2>Nos Services</h2>
-          <div class="service-grid">
-
-            <div class="services-item">
-              <h3>Conseil en décoration d'intérieur</h3>
-            <img src="images/serv.consulting.jpg" style="width: 80vh;"  alt="service 1">
-            <p>Nous offrons des services de conseil personnalisés pour vous aider à choisir les meilleures options de décoration pour votre espace.</p>
-          </div>
-
-            <div class="services-item">
-              <h3>Décoration de mariage et d'événements</h3>
-            <img src="images/decor-mariage.jpg" style="width: 80vh;" alt="service 2">
-            <p>Créez l'ambiance parfaite pour votre journée spéciale avec nos services de décoration de mariage sur mesure.</p>
+    <!-- Section À propos -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">À propos</h2>
+                    <p class="about-description">
+                        Chez Founy Design, nous allions créativité, élégance et savoir-faire pour transformer chaque espace en un lieu unique et harmonieux.
+                    </p>
+                    <p class="about-description">
+                        Notre équipe passionnée met son expertise au service de vos projets de décoration intérieure et événementielle.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Décoration élégante" loading="lazy">
+                </div>
             </div>
+        </div>
+    </section>
 
-          <div class="services-item">
-              <h3>Décoration intérieure résidentielle</h3>
-            <img src="images/décoration-maison.jpg" style="width: 80vh;" alt="service 3">
-            <p>Transformez votre maison avec nos services de décoration intérieure, adaptés à votre style et à vos besoins.</p>
+    <!-- Section Notre Mission -->
+    <section class="mission" id="mission">
+        <div class="mission-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">Notre mission</h2>
+            <p class="mission-text">
+                Créer des environnements inspirants qui reflètent la personnalité et les aspirations de nos clients, tout en alliant esthétisme et fonctionnalité.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Nos Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nos services</h2>
+            <div class="services-grid">
+
+                <!-- card 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Décoration de maison" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Décoration de maison</h3>
+                    <p class="service-description">Transformez votre maison en un espace chaleureux et élégant qui vous ressemble.</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/serv.consulting.jpg" alt="Conseils en décoration" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Conseils en décoration d'intérieur</h3>
+                    <p class="service-description">Bénéficiez de conseils personnalisés pour harmoniser vos espaces de vie.</p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/decor-mariage.jpg" alt="Décoration de mariage" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Décoration de salles de mariage</h3>
+                    <p class="service-description">Créez l'ambiance parfaite pour célébrer votre jour le plus précieux.</p>
+                </div>
+
+                <!-- card 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/decor.even.jpg" alt="Décoration d'événements" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Décoration d'événements</h3>
+                    <p class="service-description">Des décorations sur mesure pour tous vos événements professionnels et privés.</p>
+                </div>
+
+                <!-- cade 5 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/acces.decor.jpg" alt="Accessoires de décoration" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Vente d'accessoires de décoration</h3>
+                    <p class="service-description">Découvrez notre sélection d'accessoires raffinés pour sublimer votre intérieur.</p>
+                </div>
+                <!-- card 6 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/boutique.jpg" alt="Décoration de boutiques" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Décoration de boutiques</h3>
+                    <p class="service-description">Aménagements commerciaux attractifs et fonctionnels pour valoriser vos produits et attirer la clientèle.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Réalisations -->
+    <section class="realisations" id="realisations">
+        <div class="container">
+            <h2 class="section-title">Nos réalisations</h2>
+            <div class="realisations-grid">
+
+                <!-- realisation 1 -->
+                <div class="realisation-item">
+                    <img src="images/bureau.jpg" alt="Bureau" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Bureau</h3>
+                    </div>
+                </div>
+
+                <!-- realisation 2 -->
+                <div class="realisation-item">
+                    <img src="images/real.cham.jpg" alt="Chambre" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Chambre</h3>
+                    </div>
+                </div>
+
+                <!-- realisation 3 -->
+                <div class="realisation-item">
+                    <img src="images/kitchen.jpg" alt="Cuisine" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Cuisine</h3>
+                    </div>
+                </div>
+
+                <!-- realisation 4 -->
+                <div class="realisation-item">
+                    <img src="images/salon-moderne.jpg" alt="Salon" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Salon</h3>
+                    </div>
+                </div>
+
+                <!-- realisation 5 -->
+                <div class="realisation-item">
+                    <img src="images/espace-détente.jpg" alt="Espace détente" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Espace détente</h3>
+                    </div>
+                </div>
+
+                <!-- realisation 6 -->
+                <div class="realisation-item">
+                    <img src="images/salle-a-manger.jpeg" alt="Salle de bain" loading="lazy">
+                    <div class="realisation-overlay">
+                        <h3>Salle à manger</h3>
+                    </div>
+                </div>
             </div>
-      </section>
-    <!-- fin section services -->
-
-    <!-- section de realisations -->
-    <section class="realisations">
-        <h2>Nos Réalisations</h2>
-        <p>Quelques projets récents réalisés par Founy  Design.</p>
         </div>
+    </section>
 
-        <div class="realisations-list">
-        <div class="realisations-item">
-            <h3>Bureau Moderne</h3>
-            <img src="images/real.bure.jpg" style="width: 80vh;" alt="Bureu moderne">
-            <p>Un espace de travail contemporain avec des touches minimalistes.</p>
+    <!-- Section Témoignages -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que nos clients disent</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Founy Design a transformé ma maison en un véritable cocon. Un travail soigné, élégant et plein de goût. Merci à toute l'équipe !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sophie M." loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sophie M.</h4>
+                            <p>Cliente particulière</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Un service exceptionnel pour notre mariage. L'équipe a su créer l'ambiance romantique et élégante dont nous rêvions. Résultat époustouflant !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Amina et Karim" loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Amina et Karim</h4>
+                            <p>Mariage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professionnalisme et créativité au rendez-vous. Founy Design a su comprendre mes besoins et créer un espace à la fois fonctionnel et esthétique."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Marc L." loading="lazy">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Marc L.</h4>
+                            <p>Bureau professionnel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="realisations-item">
-            <h3>Chambre Élégante</h3>
-            <img src="images/real.cham.jpg" style="width: 80vh;" alt="Chambre élégante">
-            <p>Une chambre à coucher sophistiquée avec des couleurs apaisantes.</p>
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+225 05 02 03 27 38</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@founydesign.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>123 Avenue de la Décoration<br> Abidjan, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps?q=Abidjan&output=embed "
+                            height="220"
+                            width="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="realisations-item">
-            <h3>Cuisine Contemporaine</h3>
-            <img src="images/kitchen.jpg" style="width: 80vh;" alt="Cuisine Contemporaine">
-            <p>Une cuisine moderne avec des finitions haut de gamme et un design fonctionnel.</p>
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; 2025 Founy Design – Tous droits réservés</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
-
-        <div class="realisations-item">
-            <h3>Salon Confortable</h3>
-            <img src="images/salon-moderne.jpg" style="width: 80vh;" alt="Salon Confortable">
-            <p>Un salon chaleureux et accueillant, parfait pour se détendre en famille.</p>
-        </div>
-
-        <div class="realisations-item">
-            <h3>Espace de Détente</h3>
-            <img src="images/espace-détente.jpg" style="width: 80vh;" alt="Espace de Détente">
-            <p>Un coin détente avec des sièges confortables et une ambiance relaxante.</p>
-        </div>
-        </div>
-        </section>
-        <!-- fin section de realisations -->
-
-        
-    
-
-    <!-- section contact -->
-    <section class="contacts">
-          <h2>Contactez-Nous</h2>
-          <p>Nous serions ravis de vous entendre! Remplissez le formulaire ci-dessous pour toute question ou demande de renseignements.</p>
-
-          <form >
-            <input type="text" placeholder="Nom" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Message" required>
-            <button type="btn-outline">Envoyer</button>
-          </form>
-
-          <!-- notre emplacement -->
-           <div class="map">
-          <h3>Notre Emplacement</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14544.401262649444!2d-3.9655859596512637!3d5.3715436773185115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eccc27a4e1c9%3A0xf9cd42ec877924f6!2sRivi%C3%A9ra%20Palmeraie%2C%20Abidjan!5e1!3m2!1sfr!2sci!4v1762524792242!5m2!1sfr!2sci" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <!-- fin notre emplacement -->
-      </section>
-    <!-- fin section contact -->
-
-
-   
-
-
-
-    
-    <!-- section footer -->
-    <footer>
-        <p>&copy; 2025 Founy Design. Tous droits réservés.</p>
-        <a href="https://www.facebook.com" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.instagram.com" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com" target="_blank" aria-label="youtube"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.Linkedin.com" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.whatsapp.com" target="_blank" aria-level="whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.Tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-Tiktok"></i></a>
     </footer>
-    <!-- fin section footer -->
-     <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+    <script type="module" src="/script.js"></script>
 </body>
 </html>
